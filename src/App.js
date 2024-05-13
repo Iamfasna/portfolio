@@ -13,7 +13,9 @@ import html from './images/html.png'
 import css from './images/css.png'
 import github from './images/github.png'
 import cv from './images/cv.pdf'
-
+import frontend from './images/frontend.jpg'
+import backend from './images/backend.jpeg'
+import webdesign from './images/webdes.png'
 
 
 
@@ -42,6 +44,11 @@ function App() {
         <div className='outer-div' >
           <div className='resume'>
             <p>I'm a FullStack Developer</p>
+            <div className='services'>
+              <div><img src={frontend} alt='img'></img></div>
+              <div><img src={backend} alt='img'></img></div>
+              <div><img src={webdesign} alt='img'></img></div>
+            </div>
           </div>
           <div id="home" class="container">
             <div className="overlay"></div>

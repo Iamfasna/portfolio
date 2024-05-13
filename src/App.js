@@ -12,9 +12,13 @@ import java from './images/java.png'
 import html from './images/html.png'
 import css from './images/css.png'
 import github from './images/github.png'
+import cv from './images/cv.pdf'
+
+
 
 
 function App() {
+
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const skillsRef = useRef(null);
@@ -34,15 +38,19 @@ function App() {
         scrollToExperience={() => scrollToRef(experienceRef)}
         scrollToContact={() => scrollToRef(contactRef)}
       />
-      <div style={{ marginLeft: '350px', padding: '20px' }}>
-        <div ref={homeRef} id='home'>
-          {/* Home content */}
-          <h1>Home Section</h1>
-          <p> </p>
+      <div style={{ marginLeft: '350px', padding: '20px', backgroundcolor: '#000000' }}>
+        <div className='outer-div' >
+          <div className='resume'>
+            <p>I'm a FullStack Developer</p>
+          </div>
+          <div id="home" class="container">
+            <div className="overlay"></div>
+            <div className="text">Hello..!<br></br>I'm Fasna</div>
+          </div>
         </div>
         <div ref={aboutRef} id='about'>
           {/* About content */}
-          <h1>ABOUT US</h1>
+          <h1>ABOUT</h1>
           <p>WHO AM I?</p>
           <p>Hello! I'm Fasna F F, an enthusiastic and aspiring full stack developer eager to embark on a career in software development. Although I'm a fresher, I'm equipped with a solid foundation in key technologies such as JavaScript, React, Node.js, MongoDB, Express, HTML, CSS, Python, and C, which I've honed through coursework, personal projects, and self-study. I have a passion for learning and a drive to contribute to impactful projects that push the boundaries of innovation. I'm excited to apply my skills and knowledge to real-world challenges and to grow professionally in the dynamic field of web development.</p>
         </div>
@@ -103,6 +111,7 @@ function App() {
           <p>Linkedin: <a href="https://linkedin.com/in/fasna-f-f-79984b2ab">https://linkedin.com/in/fasna-f-f-79984b2ab</a></p>
           <p>Email: <a href="mailto:fasnaff2@gmail.com">fasnaff2@gmail.com</a></p>
           <p>Contact no : <a href="tel:+919188707358">91 9188707358</a></p>
+          <p>Resume:<a href='src/images/cv.pdf' download={cv}>Download pdf</a></p>
         </div>
 
       </div >

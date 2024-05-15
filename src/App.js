@@ -13,9 +13,7 @@ import html from './images/html.png'
 import css from './images/css.png'
 import github from './images/github.png'
 import cv from './images/cv.pdf'
-import frontend from './images/frontend.jpg'
-import backend from './images/backend.jpeg'
-import webdesign from './images/webdes.png'
+
 
 
 
@@ -42,14 +40,6 @@ function App() {
       />
       <div style={{ marginLeft: '350px', padding: '20px', backgroundcolor: '#000000' }}>
         <div className='outer-div' >
-          {/* <div className='resume'>
-            <p>I'm a FullStack Developer</p>
-            <div className='services'>
-              <div><img src={frontend} alt='img'></img></div>
-              <div><img src={backend} alt='img'></img></div>
-              <div><img src={webdesign} alt='img'></img></div>
-            </div>
-          </div> */}
           <div id="home" class="container">
             <div className="overlay"></div>
             <div className="text">FASNA F F<br></br>
@@ -105,10 +95,10 @@ function App() {
             Gained hands-on experience in full-stack web development, including front-end design and backend server setup.</p>
           <p>  2.SCHOOL LIBRARY MANAGEMENT SYSTEM (MERN STACK - GROUP PROJECT):</p>
           <p>
-            Collaborated on a group project to build a school library management system using the MERN stack. designed and implemented database schemas, user interfaces, and API endpoints. demonstrated strong teamwork, communication, and problem-solving skills throughout the project lifecycle.</p>
+            Collaborated on a group project to build a school library management system using the MERN stack. Designed and implemented database schemas, user interfaces, and API endpoints. Demonstrated strong teamwork, communication, and problem-solving skills throughout the project lifecycle.</p>
           <p> 3.E-COMMERCE APPLICATION (NODE.JS, EXPRESS.JS, MONGODB, HBS):</p>
           <p>
-            Created a dynamic e-commerce platform using Node.js, Express.js, MongoDB, and Handlebars (HBS) templating engine. developed features such as product catalog, user authentication, shopping cart functionality, and order processing. gained valuable experience in server-side programming, database management, and web application deployment.
+            Created a dynamic e-commerce platform using Node.js, Express.js, MongoDB, and Handlebars (HBS) templating engine. Developed features such as product catalog, user authentication, shopping cart functionality, and order processing. Gained valuable experience in server-side programming, database management, and web application deployment.
           </p>
         </div>
         <div ref={contactRef} id='contact'>

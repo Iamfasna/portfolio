@@ -65,18 +65,19 @@ body {
 .container {
   position: relative;
   width: 100%;
-  max-width: 400px;
-  height: 400px;
+  max-width: 100%;
+  height: 1000px;
   overflow: hidden;
   margin: 20px auto;
   border-radius: 15px;
 }
 
 #home {
-  background-image: url('images/fasna2.jpg');
+  background-image: url('images/picture.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
+  opacity: 0.5;
 }
 
 .overlay {
@@ -94,17 +95,19 @@ body {
 }
 
 .text {
-  font-size: 2.5rem;
+  font-size: 80px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: rgba(255, 255, 255, 0);
   position: absolute;
-  right: 0;
-  bottom: 0;
+  /* right: 0;
+  bottom: 0; */
+  padding-left: 200px;
+  padding-top: 500px;
   transition: color 0.3s ease;
 }
 
 .container:not(:hover) .text {
-  color: rgba(255, 255, 255, 1);
+  color: rgb(255, 255, 255);
 }
 
 .skills-div {
@@ -112,6 +115,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+
 }
 
 .box {
@@ -126,10 +130,6 @@ body {
 .box img {
   width: 70%;
   transition: border 0.3s ease;
-}
-
-.box img:hover {
-  border: 2px solid #000000;
 }
 
 .section {

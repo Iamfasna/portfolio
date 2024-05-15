@@ -42,27 +42,27 @@ function App() {
       />
       <div style={{ marginLeft: '350px', padding: '20px', backgroundcolor: '#000000' }}>
         <div className='outer-div' >
-          <div className='resume'>
+          {/* <div className='resume'>
             <p>I'm a FullStack Developer</p>
             <div className='services'>
               <div><img src={frontend} alt='img'></img></div>
               <div><img src={backend} alt='img'></img></div>
               <div><img src={webdesign} alt='img'></img></div>
             </div>
-          </div>
+          </div> */}
           <div id="home" class="container">
             <div className="overlay"></div>
-            <div className="text">Hello..!<br></br>I'm Fasna</div>
+            <div className="text">FASNA F F<br></br>
+              <p>I'm Developer , Designer</p>
+            </div>
           </div>
         </div>
         <div ref={aboutRef} id='about'>
-          {/* About content */}
-          <h1>ABOUT</h1>
+          < h1 > ABOUT</h1>
           <p>WHO AM I?</p>
           <p>Hello! I'm Fasna F F, an enthusiastic and aspiring full stack developer eager to embark on a career in software development. Although I'm a fresher, I'm equipped with a solid foundation in key technologies such as JavaScript, React, Node.js, MongoDB, Express, HTML, CSS, Python, and C, which I've honed through coursework, personal projects, and self-study. I have a passion for learning and a drive to contribute to impactful projects that push the boundaries of innovation. I'm excited to apply my skills and knowledge to real-world challenges and to grow professionally in the dynamic field of web development.</p>
         </div>
         <div ref={skillsRef} id='skills'>
-          {/* Skills content */}
           <h1>SKILLS</h1>
           <div className='skills-div'>
             <div className='box'>
@@ -112,7 +112,6 @@ function App() {
           </p>
         </div>
         <div ref={contactRef} id='contact'>
-          {/* Contact content */}
           <h1>Contact Section</h1>
           <p>Git Hub : <a href="https://github.com/Iamfasna">https://github.com/Iamfasna</a></p>
           <p>Linkedin: <a href="https://linkedin.com/in/fasna-f-f-79984b2ab">https://linkedin.com/in/fasna-f-f-79984b2ab</a></p>

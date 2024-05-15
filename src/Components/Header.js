@@ -2,7 +2,7 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap';
 import '../style/Header.css';
-import myImage from '../images/WhatsApp Image 2024-05-09 at 21.09.41_0b32db3e.jpg';
+import myImage from '../images/picture.jpg';
 
 function Header() {
   return (
@@ -13,11 +13,11 @@ function Header() {
         <h5 className='texts'>FullStack Developer</h5>
       </div>
       <Nav className="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#home">&#xF379; Home</a>
+        <a href="#about">&#xf406; About</a>
+        <a href="#skills">&#xf3a0; Skills</a>
+        <a href="#experience">&#xf4ce; Projects</a>
+        <a href="#contact">&#xf879; Contact</a>
       </Nav>
     </aside>
   );

@@ -4,6 +4,7 @@ import { Nav } from 'react-bootstrap';
 import '../style/Header.css';
 import myImage from '../images/picture.jpg';
 
+
 function Header() {
   return (
     <aside className="custom-sidebar">

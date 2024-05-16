@@ -1,7 +1,8 @@
 body {
-  background-color: rgb(242, 223, 223);
+  background-color: #FBE8A6;
   margin: 0;
   font-family: Arial, sans-serif;
+  color: rgb(0, 0, 0);
 }
 
 .content {
@@ -66,14 +67,14 @@ body {
   position: relative;
   width: 100%;
   max-width: 100%;
-  height: 1000px;
+  height: 500px;
   overflow: hidden;
   margin: 20px auto;
   border-radius: 15px;
 }
 
 #home {
-  background-image: url('images/picture.jpg');
+  background-image: url('images/propic.jpeg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -99,10 +100,8 @@ body {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: rgba(255, 255, 255, 0);
   position: absolute;
-  /* right: 0;
-  bottom: 0; */
   padding-left: 200px;
-  padding-top: 500px;
+  padding-top: 100px;
   transition: color 0.3s ease;
 }
 
@@ -110,26 +109,37 @@ body {
   color: rgb(255, 255, 255);
 }
 
-.skills-div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
 
+.skills {
+  width: 80%;
+  max-width: 600px;
+  background-color: #FBE8A6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.box {
-  width: 150px;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
+.skill {
+  margin-bottom: 20px;
 }
 
-.box img {
-  width: 70%;
-  transition: border 0.3s ease;
+.skill p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.progress {
+  background: #e0e0e0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 10px;
+  background: #000000;
+  border-radius: 20px;
 }
 
 .section {
@@ -137,18 +147,78 @@ body {
   text-align: center;
 }
 
+.experience {
+  display: flex;
+  background-color: #FBE8A6;
+}
+
+.experience div {
+  margin-left: 50px;
+  border: 2px solid #ffffff;
+  padding: 10px;
+  box-shadow: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease;
+
+}
+
+.experience div:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.experience div p {
+  font-family: serif;
+}
+
+/* Add media queries for responsiveness */
 @media (max-width: 768px) {
+  .container {
+    height: 300px;
+    /* Adjust height for smaller screens */
+  }
+
+  .text {
+    font-size: 40px;
+    /* Decrease font size for smaller screens */
+    padding-left: 50px;
+    /* Adjust padding for smaller screens */
+    padding-top: 50px;
+    /* Adjust padding for smaller screens */
+  }
+
   .resume p {
     font-size: 1.5rem;
+    /* Decrease font size for smaller screens */
+  }
+
+  .services {
+    justify-content: flex-start;
+    /* Align services to start for smaller screens */
   }
 
   .services div {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    /* Decrease width of service items for smaller screens */
+    height: 80px;
+    /* Decrease height of service items for smaller screens */
+    margin: 10px;
+    /* Adjust margin for smaller screens */
   }
 
-  .box {
-    width: 100px;
-    height: 100px;
+  .experience div {
+    margin-left: 20px;
+    /* Adjust margin for smaller screens */
+  }
+
+  .skills {
+    width: 100%;
+    /* Make skills section full width for smaller screens */
+    max-width: none;
+    /* Remove max-width for smaller screens */
+  }
+
+  .skills .progress {
+    width: 100%;
+    /* Make progress bars full width for smaller screens */
   }
 }
